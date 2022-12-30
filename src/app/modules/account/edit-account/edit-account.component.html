@@ -1,0 +1,114 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Nouveau</strong>
+    </div>
+    <div class="card-body">
+        <form class="form-inner" method="post" accept-charset="utf-8">
+
+
+
+
+            <div class="form-group row">
+                <label for="name" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nom du compte </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-xs-9">
+                    <input name="name" [(ngModel)]="model.name" type="text" class="form-control" id="name"
+                        placeholder="Nom du compte" value="">
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="type" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Type </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-xs-9">
+                    <select [(ngModel)]="model.type" name="type" class="form-control select2-hidden-accessible"
+                        id="type" tabindex="-1" aria-hidden="true">
+                        <option value="1">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Débit</font>
+                            </font>
+                        </option>
+                        <option value="2">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Crédit</font>
+                            </font>
+                        </option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="description" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">La description</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <textarea [(ngModel)]="model.description" name="description" class="form-control"
+                        placeholder="La description" rows="7">
+                    </textarea>
+
+                </div>
+            </div>
+
+            <!--Radio-->
+            <div class="form-group row">
+                <label class="col-xs-3">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Statut</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <div class="form-check">
+                        <label class="radio-inline"><input type="radio" name="status" value="1" checked="">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">actif</font>
+                            </font>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="status" value="0">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inactif</font>
+                            </font>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="  ">
+                    <div class="btn btn-primarys">
+
+
+                        <button (click)="edit()" class="btn btn-success">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sauvegarder</font>
+                            </font>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>

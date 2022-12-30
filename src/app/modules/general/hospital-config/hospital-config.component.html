@@ -1,0 +1,45 @@
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Hopital</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nom Entreprise</th>
+                        <th>Email Entreprise</th>
+                        <th>Time Zone</th>
+                        <th>Date format</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{entreprise_config.company_name}}</td>
+                        <td>{{entreprise_config.company_email}}</td>
+                        <td>{{entreprise_config.time_zone}}</td>
+                        <td>{{entreprise_config.date_format}}</td>
+                        <td>
+                            <button title="career devis" data-togglee="tooltip" type="button" data-toggle="modal"
+                                data-target="#editClient" class="btn btn-success btn-sm"><i
+                                    class="fas fa-file-invoice"></i></button>
+
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                        <th>Solde</th>
+                        <th>Actions</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

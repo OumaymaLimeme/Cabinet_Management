@@ -1,0 +1,120 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Nouveau</strong>
+    </div>
+    <div class="card-body">
+        <form class="form-inner" id="mailForm" enctype="multipart/form-data" [formGroup]="documentForm"
+            accept-charset="utf-8">
+
+
+            <div class="form-group row">
+                <label for="patient_id" class="col-md-6 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nom de patient</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <select name="patient_id" class="form-control select2-hidden-accessible" id="patient_id"
+                        [ngClass]="{ 'is-invalid': submitted && f.patient_id.errors }" formControlName="patient_id"
+                        tabindex="-1" aria-hidden="true">
+                        <option value="Willam Carlos">
+                            Willam Carlos
+                        </option>
+
+                    </select>
+
+                    <div *ngIf="submitted && f.doctor_id.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.doctor_id.errors.required">
+                            {{msg.validationMessage.doctor_id}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <label for="attach_file" class="col-md-6 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Joindre un fichier </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input type="file" name="attach_file" id="attach_file">
+
+                    <p id="upload-progress" class="hide alert"></p>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="doctor_id" class="col-md-6 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nom du médecin</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <select name="doctor_id" class="form-control select2-hidden-accessible" id="doctor_id"
+                        [ngClass]="{ 'is-invalid': submitted && f.doctor_id.errors }" formControlName="doctor_id"
+                        tabindex="-1" aria-hidden="true">
+                        <option value="Willam Carlos">
+                            Willam Carlos
+                        </option>
+
+                    </select>
+
+                    <div *ngIf="submitted && f.doctor_id.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.doctor_id.errors.required">
+                            {{msg.validationMessage.doctor_id}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="description" class="col-md-6 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">La description</font>
+                    </font>
+                </label>
+                <textarea [ngClass]="{ 'is-invalid': submitted && f.description.errors }" formControlName="description"
+                    class="form-control"></textarea>
+
+                <div *ngIf="submitted && f.description.errors" class="alert alert-danger">
+                    <div *ngIf="submitted && f.description.errors.required">
+                        {{msg.validationMessage.description}}</div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-md-8">
+
+
+
+                    <button type="reset" class="btn btn-primary">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Réinitialiser</font>
+                        </font>
+                    </button>
+
+                    <button (click)="add()" class="btn btn-success">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Sauvegarder</font>
+                        </font>
+                    </button>
+
+                </div>
+            </div>
+
+
+        </form>
+
+
+    </div>
+</div>

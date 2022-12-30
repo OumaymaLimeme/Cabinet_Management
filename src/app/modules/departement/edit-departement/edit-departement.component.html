@@ -1,0 +1,46 @@
+<form class="form-inner" method="post" accept-charset="utf-8">
+
+
+
+
+    <div class="form-group">
+        <label for="name" class="col-xs-3 col-form-label">Nom de Department <i class="text-danger">*</i></label>
+        <div class="col-md-9">
+            <input [(ngModel)]="model.name" name="name" type="text" class="form-control" id="name"
+                placeholder="Nom de Department" value="{{model.name}}">
+
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="description" class="col-xs-3 col-form-label">Description</label>
+        <div class="col-md-9">
+            <textarea name="description" value="{{model.description}}" [(ngModel)]="model.description"
+                class="form-control" placeholder="Description" rows="7"></textarea>
+        </div>
+    </div>
+
+    <!--Radio-->
+    <div class="form-group">
+        <label class="col-md-3 col-form-label">Statut</label>
+        <div class="col-md-9">
+            <div class="form-check">
+                <label class="radio-inline"><input formControlName="status" type="radio" name="status" value="1"
+                        value="active" checked="">Active</label>
+                <label class="radio-inline"><input formControlName="status" type="radio" name="status"
+                        value="inactive">Inactive</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <button type="button" (click)="edit()" class="btn btn-success">Sauvegarder</button>
+
+
+
+
+</form>

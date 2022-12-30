@@ -1,0 +1,283 @@
+<form class="form-inner" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+
+
+    <div class="form-group row">
+        <label for="firstname" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Prénom </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="firstname" [(ngModel)]="model.firstname" type="text" class="form-control" id="firstname"
+                placeholder="Prénom" value="">
+
+
+
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="lastname" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Nom de famille </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="lastname" [(ngModel)]="model.lastname" type="text" class="form-control" id="lastname"
+                placeholder="Nom de famille" value="">
+
+
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="email" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Adresse e-mail </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="email" [(ngModel)]="model.email" type="email" class="form-control" id="email"
+                placeholder="Adresse e-mail" value="">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="password" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Mot de passe </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="password" [(ngModel)]="model.password" type="password" class="form-control" id="password"
+                placeholder="Mot de passe">
+
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="phone" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Pas de téléphone</font>
+            </font>
+        </label>
+        <div class="col-md-6">
+            <input name="phone" [(ngModel)]="model.phone" class="form-control" type="number"
+                placeholder="Pas de téléphone" id="phone" value="">
+
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="mobile" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Mobile Non </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="mobile" [(ngModel)]="model.mobile" class="form-control" type="number" placeholder="Mobile Non"
+                id="mobile" value="">
+
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="blood_group" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Groupe sanguin</font>
+            </font>
+        </label>
+        <div class="col-md-6">
+            <select name="blood_group" [(ngModel)]="model.blood_group" class="form-control select2-hidden-accessible"
+                id="blood_group" tabindex="-1" aria-hidden="true">
+
+                <option value="A+">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">A +</font>
+                    </font>
+                </option>
+                <option value="A-">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">A-</font>
+                    </font>
+                </option>
+                <option value="B+">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">B +</font>
+                    </font>
+                </option>
+                <option value="B-">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">B-</font>
+                    </font>
+                </option>
+                <option value="O+">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">O +</font>
+                    </font>
+                </option>
+                <option value="O-">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">O-</font>
+                    </font>
+                </option>
+                <option value="AB+">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">AB +</font>
+                    </font>
+                </option>
+                <option value="AB-">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">UN B-</font>
+                    </font>
+                </option>
+            </select>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <label class="col-xs-3">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Sexe </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <div class="form-check">
+                <label class="radio-inline">
+                    <input formControlName="sex" type="radio" name="sex" value="Male" checked="&quot;checked&quot;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Masculin </font>
+                    </font>
+                </label>
+                <label class="radio-inline">
+                    <input formControlName="sex" type="radio" name="sex" value="Female">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Femme </font>
+                    </font>
+                </label>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="date_of_birth" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Date de naissance </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <input name="date_of_birth" [(ngModel)]="model.date_of_birth"
+                class="dropdown-month-years form-control hasDatepicker" type="text" placeholder="Date de naissance"
+                id="date_of_birth" value="2021-01-19">
+
+
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="picture" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Image</font>
+            </font>
+        </label>
+        <div class="col-md-6">
+            <input type="file" name="picture" id="picture" value="">
+            <input type="hidden" name="old_picture" value="">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="address" class="col-xs-3 col-form-label">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Adresse </font>
+            </font><i class="text-danger">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">*</font>
+                </font>
+            </i>
+        </label>
+        <div class="col-md-6">
+            <textarea name="address" [(ngModel)]="model.address" class="form-control" placeholder="Adresse"
+                maxlength="140" rows="7"></textarea>
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <label class="col-xs-3">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Statut</font>
+            </font>
+        </label>
+        <div class="col-md-6">
+            <div class="form-check">
+                <label class="radio-inline">
+                    <input formControlName="status" type="radio" name="status" value="1" checked="&quot;checked&quot;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">actif </font>
+                    </font>
+                </label>
+                <label class="radio-inline">
+                    <input formControlName="status" type="radio" name="status" value="0">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Inactif </font>
+                    </font>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div>
+
+
+                <button (click)="edit()" class="btn btn-success">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Sauvegarder</font>
+                    </font>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

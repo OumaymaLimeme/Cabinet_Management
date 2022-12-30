@@ -1,0 +1,267 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Nouveau</strong>
+    </div>
+    <div class="card-body">
+        <form class="form-inner" [formGroup]="prescriptionForm" method="post" accept-charset="utf-8">
+
+
+            <div class="form-group row">
+                <label for="patient_id" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">ID du patient </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-xs-9">
+                    <input name="patient_id" type="text" class="form-control" id="patient_id"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="ID du patient" value="">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="food_allergies" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Allergies alimentaires</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="food_allergies" type="text" class="form-control" id="food_allergies"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Allergies alimentaires" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="tendency_bleed" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Saignement de tendance</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="tendency_bleed" type="text" class="form-control" id="tendency_bleed"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Saignement de tendance" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="heart_disease" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Cardiopathie</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="heart_disease" type="text" class="form-control" id="heart_disease"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Cardiopathie" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="high_blood_pressure" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Hypertension artérielle</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="high_blood_pressure" type="text" class="form-control" id="high_blood_pressure"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Hypertension artérielle" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="diabetic" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Diabétique</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="diabetic" type="text" class="form-control" id="diabetic"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Diabétique" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="surgery" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Chirurgie</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="surgery" type="text" class="form-control" id="surgery"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Chirurgie" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="accident" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Accident</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="accident" type="text" class="form-control" id="accident"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Accident" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="others" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Autres</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="others" type="text" class="form-control" id="others"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Autres" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="family_medical_history" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Antécédents médicaux familiaux</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="family_medical_history" type="text" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        id="family_medical_history" placeholder="Antécédents médicaux familiaux" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="current_medication" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Médicament actuel</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="current_medication" type="text" class="form-control"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        id="current_medication" placeholder="Médicament actuel" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="female_pregnancy" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Grossesse féminine</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="female_pregnancy" type="text" class="form-control" id="female_pregnancy"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Grossesse féminine" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="breast_feeding" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Allaitement maternel</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="breast_feeding" type="text" class="form-control" id="breast_feeding"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Allaitement maternel" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="health_insurance" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Assurance santé</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="health_insurance" type="text" class="form-control" id="health_insurance"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Assurance santé" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="low_income" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Faible revenu</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="low_income" type="text" class="form-control" id="low_income"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Faible revenu" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="reference" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Référence</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="reference" type="text" class="form-control" id="reference"
+                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
+                        placeholder="Référence" value="">
+                </div>
+            </div>
+
+            <!--Radio-->
+            <div class="form-group row">
+                <label class="col-sm-3">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Statut</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <div class="form-check">
+                        <label class="radio-inline"><input type="radio" name="status" value="1" checked="">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">actif</font>
+                            </font>
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="status" value="0">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inactif</font>
+                            </font>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="  ">
+                    <div class="btn btn-primarys">
+                        <button type="reset" class="btn btn-primary">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Réinitialiser</font>
+                            </font>
+                        </button>
+                        <div class="or"></div>
+                        <button (click)="add()" class="btn btn-success">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sauvegarder</font>
+                            </font>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>

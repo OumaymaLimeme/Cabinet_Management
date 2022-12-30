@@ -1,0 +1,81 @@
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Préscriptions</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+
+            <th>Patient</th>
+            <th>Rendez-vous</th>
+            <th>Type</th>
+            <th>Medecin</th>
+            <th>Frais</th>
+            <th>Date</th>
+            <th>etat</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Patient</th>
+            <th>Rendez-vous</th>
+            <th>Type</th>
+            <th>Medecin</th>
+            <th>Frais</th>
+            <th>Date</th>
+            <th>etat</th>
+            <th>Actions</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+
+            <td>Pinabel Desroches</td>
+            <td>2/2/2020</td>
+            <td>controle</td>
+            <td><span class="badge badge-primary">Eleanor Cinq-Mars</span></td>
+            <td>50$</td>
+            <td>2/2/2020</td>
+            <td> <span class="badge badge-success">active</span></td>
+            <td><button data-toggle="modal" data-target="#view" type="button" class="btn btn-primary btn-sm"><i
+                  class="fas fa-address-book"></i></button>
+
+              <button type="button" class="btn btn-danger btn-sm"
+                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');"><i
+                  class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+      <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"> Editer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <app-view-prescription></app-view-prescription>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

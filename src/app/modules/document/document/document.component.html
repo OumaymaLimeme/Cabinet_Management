@@ -1,0 +1,167 @@
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Documents</h1>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table width="100%"
+                class="datatable table table-striped table-bordered table-hover dataTable no-footer dtr-inline"
+                id="DataTables_Table_0" role="grid" style="width: 100%;">
+                <thead>
+                    <tr role="row">
+
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="ID du patient: activer pour trier la colonne par ordre croissant"
+                            style="width: 59px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Patient</font>
+                            </font>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="Nom du médecin: activer pour trier les colonnes par ordre croissant"
+                            style="width: 60px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Nom du médecin</font>
+                            </font>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="La description: activer pour trier les colonnes par ordre croissant"
+                            style="width: 683px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">La description</font>
+                            </font>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="Date: activer pour trier les colonnes par ordre croissant" style="width: 53px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Description</font>
+                            </font>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="Télécharger par: activer pour trier les colonnes par ordre croissant"
+                            style="width: 97px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Télécharger par</font>
+                            </font>
+                        </th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="action: activer pour trier la colonne par ordre croissant" style="width: 44px;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">action</font>
+                            </font>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let item of documents$">
+
+                        <td>
+                            {{item.patient_id}}
+                        </td>
+                        <td>
+                            {{item.doctor_id}}
+                        </td>
+                        <td class="badge badge-primary">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">essai.docx</font>
+                            </font>
+                        </td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.doctor_id}}</td>
+                        <td><button data-toggle="modal" data-target="#view" type="button"
+                                class="btn btn-primary btn-sm"><i class="fas fa-address-book"></i></button>
+                            <button data-toggle="modal" data-target="#edit" type="button"
+                                class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');"><i
+                                    class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+
+
+                    <tr role="row" class="odd">
+
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">PLGBQOV2</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Annette Deblois</font>
+                            </font>
+                        </td>
+                        <td class="badge badge-primary">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">essai.docx</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">12/04/2020</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Brice Lefèbvre
+                                </font>
+                            </font>
+                        </td>
+                        <td><button data-toggle="modal" data-target="#view" type="button"
+                                class="btn btn-primary btn-sm"><i class="fas fa-address-book"></i></button>
+                            <button data-toggle="modal" data-target="#edit" type="button"
+                                class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');"><i
+                                    class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+
+
+                    <tr role="row" class="odd">
+
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">LOHIHG067</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Allyriane Pépin
+                                </font>
+                            </font>
+                        </td>
+                        <td class="badge badge-primary">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">fiche.docx</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">03/10/2020</font>
+                            </font>
+                        </td>
+                        <td>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Marc Monjeau
+
+                                </font>
+                            </font>
+                        </td>
+                        <td>
+                            <button data-toggle="modal" data-target="#edit" type="button"
+                                class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement ?');"><i
+                                    class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

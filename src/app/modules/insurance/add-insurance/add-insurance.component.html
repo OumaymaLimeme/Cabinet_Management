@@ -1,0 +1,270 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Nouveau</strong>
+    </div>
+    <div class="card-body">
+        <form enctype="multipart/form-data" [formGroup]="insuranceForm">
+
+
+
+            <div class="form-group row">
+                <label for="insurance_name" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nom de l'assurance </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-xs-9">
+                    <input name="insurance_name" type="text" class="form-control" id="insurance_name"
+                        [ngClass]="{ 'is-invalid': submitted && f.insurance_name.errors }"
+                        formControlName="insurance_name" placeholder="Nom de l'assurance" value="">
+
+                    <div *ngIf="submitted && f.insurance_name.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.insurance_name.errors.required">
+                            {{msg.validationMessage.insurance_name}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="service_tax" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Taxe de service(%)</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="service_tax" type="number" class="form-control" id="service_tax"
+                        [ngClass]="{ 'is-invalid': submitted && f.service_tax.errors }" formControlName="service_tax"
+                        placeholder="Taxe de service" value="">
+
+                    <div *ngIf="submitted && f.service_tax.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.service_tax.errors.required">
+                            {{msg.validationMessage.service_tax}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="discount" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Remise(%)</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="discount" type="number" class="form-control" id="discount"
+                        [ngClass]="{ 'is-invalid': submitted && f.discount.errors }" formControlName="discount"
+                        placeholder="Remise" value="">
+
+                    <div *ngIf="submitted && f.discount.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.discount.errors.required">
+                            {{msg.validationMessage.discount}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="remark" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Remarque</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <textarea name="remark" class="form-control" placeholder="Remarque"
+                        [ngClass]="{ 'is-invalid': submitted && f.remark.errors }" formControlName="remark"
+                        rows="7"></textarea>
+
+                    <div *ngIf="submitted && f.remark.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.remark.errors.required">
+                            {{msg.validationMessage.remark}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <label for="insurance_no" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">N ° d'assurance</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="insurance_no" type="text" class="form-control" id="insurance_no"
+                        [ngClass]="{ 'is-invalid': submitted && f.insurance_no.errors }" formControlName="insurance_no"
+                        placeholder="N ° d'assurance" value="">
+
+                    <div *ngIf="submitted && f.insurance_no.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.insurance_no.errors.required">
+                            {{msg.validationMessage.insurance_no}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="insurance_code" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Code des assurances</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="insurance_code" type="text" class="form-control" id="insurance_code"
+                        [ngClass]="{ 'is-invalid': submitted && f.insurance_code.errors }"
+                        formControlName="insurance_code" placeholder="Code des assurances" value="">
+
+                    <div *ngIf="submitted && f.insurance_code.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.insurance_code.errors.required">
+                            {{msg.validationMessage.insurance_code}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="disease_charge" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Charge de maladie</font>
+                    </font>
+                </label>
+                <div class="col-xs-9" id="disease_charge">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <input name="disease_name" type="text" class="form-control" placeholder="Nom de la maladie"
+                                value="">
+                        </div>
+                        <div class="col-xs-4">
+                            <input name="disease_charge" type="number" class="form-control"
+                                placeholder="Charge de maladie" value="">
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="btn-group">
+                                <button type="button" class="btn  btn-info add-disease">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">+</font>
+                                    </font>
+                                </button>
+                                <button type="button" class="btn  btn-danger remove-disease">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">-</font>
+                                    </font>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="hospital_rate" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Tarif hospitalier</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="hospital_rate" type="number" class="form-control" id="hospital_rate"
+                        [ngClass]="{ 'is-invalid': submitted && f.hospital_rate.errors }"
+                        formControlName="hospital_rate" placeholder="Tarif hospitalier" value="">
+
+                    <div *ngIf="submitted && f.hospital_rate.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.hospital_rate.errors.required">
+                            {{msg.validationMessage.hospital_rate}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="insurance_rate" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Taux d'assurance</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="insurance_rate" type="number" class="form-control" id="insurance_rate"
+                        [ngClass]="{ 'is-invalid': submitted && f.insurance_rate.errors }"
+                        formControlName="insurance_rate" placeholder="Taux d'assurance" value="">
+
+                    <div *ngIf="submitted && f.insurance_rate.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.insurance_rate.errors.required">
+                            {{msg.validationMessage.insurance_rate}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="total" class="col-xs-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Total</font>
+                    </font>
+                </label>
+                <div class="col-xs-9">
+                    <input name="total" type="number" class="form-control" id="total" placeholder="Total"
+                        [ngClass]="{ 'is-invalid': submitted && f.total.errors }" formControlName="total" value="">
+
+                    <div *ngIf="submitted && f.total.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.total.errors.required">
+                            {{msg.validationMessage.total}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Statut </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-xs-9">
+                    <div class="form-check">
+                        <label class="radio-inline">
+                            <input type="radio" name="status" value="1" checked="checked">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">actif </font>
+                            </font>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="status" value="0">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inactif </font>
+                            </font>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="col-md-8">
+
+                    <button type="reset" class="btn btn-primary">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Réinitialiser</font>
+                        </font>
+                    </button>
+
+                    <button (click)="add()" class="btn btn-success">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Sauvegarder</font>
+                        </font>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>

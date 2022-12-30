@@ -1,0 +1,400 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Nouveau</strong>
+    </div>
+    <div class="card-body">
+        <form class="form-inner" enctype="multipart/form-data" [formGroup]="doctorForm" accept-charset="utf-8">
+
+
+
+            <div class="form-group row">
+                <label for="firstname" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Prénom </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input name="firstname" type="text" class="form-control" id="firstname"
+                        [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" formControlName="firstname"
+                        placeholder="Prénom" value="">
+
+                    <div *ngIf="submitted && f.firstname.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.firstname.errors.required">
+                            {{msg.validationMessage.firstname}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="lastname" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Nom de famille </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input name="lastname" type="text" class="form-control" id="lastname"
+                        [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" formControlName="lastname"
+                        placeholder="Nom de famille" value="">
+
+                    <div *ngIf="submitted && f.lastname.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.lastname.errors.required">
+                            {{msg.validationMessage.lastname}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- display in edit mode -->
+            <div class="form-group row">
+                <label for="email" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Adresse e-mail </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input name="email" class="form-control" type="email" placeholder="Adresse e-mail"
+                        [ngClass]="{ 'is-invalid': submitted && f.email.errors }" formControlName="email" id="email"
+                        value="">
+
+                    <div *ngIf="submitted && f.email.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.email.errors.required">
+                            {{msg.validationMessage.email}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="password" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Mot de passe </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input name="password" class="form-control" type="password"
+                        [ngClass]="{ 'is-invalid': submitted && f.password.errors }" formControlName="password"
+                        placeholder="Mot de passe" id="password">
+
+                    <div *ngIf="submitted && f.password.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.password.errors.required">
+                            {{msg.validationMessage.password}}</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ends of display edit mode-->
+
+
+            <div class="form-group row">
+                <label for="designation" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">La désignation</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <input name="designation" type="text" class="form-control" id="designation"
+                        [ngClass]="{ 'is-invalid': submitted && f.designation.errors }" formControlName="designation"
+                        placeholder="La désignation" value="">
+
+                    <div *ngIf="submitted && f.designation.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.designation.errors.required">
+                            {{msg.validationMessage.designation}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="departement_id" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">département </font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <select name="departement_id" class="form-control select2-hidden-accessible"
+                        [ngClass]="{ 'is-invalid': submitted && f.departement_id.errors }"
+                        formControlName="departement_id" id="departement_id" tabindex="-1" aria-hidden="true">
+
+                        <option value="13">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Néonatale</font>
+                            </font>
+                        </option>
+                        <option value="14">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Néphrologie</font>
+                            </font>
+                        </option>
+                        <option value="15">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Neurologie</font>
+                            </font>
+                        </option>
+                        <option value="16">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Oncologie</font>
+                            </font>
+                        </option>
+                        <option value="18">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Pharmacie</font>
+                            </font>
+                        </option>
+                        <option value="19">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Radiothérapie</font>
+                            </font>
+                        </option>
+
+                    </select>
+
+                    <div *ngIf="submitted && f.departement_id.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.departement_id.errors.required">
+                            {{msg.validationMessage.departement_id}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="address" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Adresse </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <textarea name="address" class="form-control" placeholder="Adresse"
+                        [ngClass]="{ 'is-invalid': submitted && f.address.errors }" formControlName="address"
+                        maxlength="140" rows="7" id="address"></textarea>
+
+                    <div *ngIf="submitted && f.address.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.address.errors.required">
+                            {{msg.validationMessage.address}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="phone" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Pas de téléphone</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <input name="phone" class="form-control" type="number" placeholder="Pas de téléphone"
+                        [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" formControlName="phone" id="phone"
+                        value="">
+
+                    <div *ngIf="submitted && f.phone.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.phone.errors.required">
+                            {{msg.validationMessage.phone}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="mobile" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Mobile Non </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <input name="mobile" class="form-control" type="number" placeholder="Mobile Non"
+                        [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" formControlName="mobile" id="mobile"
+                        value="">
+
+                    <div *ngIf="submitted && f.mobile.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.mobile.errors.required">
+                            {{msg.validationMessage.mobile}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- if representative picture is already uploaded -->
+
+            <div class="form-group row">
+                <label for="picture" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Image</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <input type="file" name="picture" id="picture" value="">
+                    <input type="hidden" name="old_picture" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="specialist" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Spécialiste</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <input type="text" name="specialist" class="form-control" placeholder="Spécialiste"
+                        [ngClass]="{ 'is-invalid': submitted && f.specialist.errors }" formControlName="specialist"
+                        id="specialist" value="">
+
+                    <div *ngIf="submitted && f.specialist.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.specialist.errors.required">
+                            {{msg.validationMessage.specialist}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="date_of_birth" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Date de naissance</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <input name="date_of_birth" class="dropdown-month-years form-control hasDatepicker" type="text"
+                        [ngClass]="{ 'is-invalid': submitted && f.date_of_birth.errors }"
+                        formControlName="date_of_birth" placeholder="Date de naissance" id="date_of_birth"
+                        value="2020-12-18">
+
+                    <div *ngIf="submitted && f.date_of_birth.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.date_of_birth.errors.required">
+                            {{msg.validationMessage.date_of_birth}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-3">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Sexe </font>
+                    </font><i class="text-danger">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">*</font>
+                        </font>
+                    </i>
+                </label>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <label class="radio-inline">
+                            <input formControlName="sex" type="radio" name="sex" value="Male"
+                                checked="&quot;checked&quot;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Masculin </font>
+                            </font>
+                        </label>
+                        <label class="radio-inline">
+                            <input formControlName="sex" type="radio" name="sex" value="Female">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Femme </font>
+                            </font>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="blood_group" class="col-md-3 col-form-label">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Groupe sanguin</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <select name="blood_group" class="form-control select2-hidden-accessible" id="blood_group"
+                        [ngClass]="{ 'is-invalid': submitted && f.blood_group.errors }" formControlName="blood_group"
+                        tabindex="-1" aria-hidden="true">
+
+                        <option value="A+">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">A +</font>
+                            </font>
+                        </option>
+                        <option value="B+">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">B +</font>
+                            </font>
+                        </option>
+                        <option value="B-">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">B-</font>
+                            </font>
+                        </option>
+                        <option value="O+">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">O +</font>
+                            </font>
+                        </option>
+
+                    </select>
+
+                    <div *ngIf="submitted && f.blood_group.errors" class="alert alert-danger">
+                        <div *ngIf="submitted && f.blood_group.errors.required">
+                            {{msg.validationMessage.blood_group}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <label class="col-md-3">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Statut</font>
+                    </font>
+                </label>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <label class="radio-inline">
+                            <input formControlName="status" type="radio" name="status" value="1"
+                                checked="&quot;checked&quot;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">actif </font>
+                            </font>
+                        </label>
+                        <label class="radio-inline">
+                            <input formControlName="status" type="radio" name="status" value="0">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inactif </font>
+                            </font>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="reset" class="btn btn-secondary">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Réinitialiser</font>
+                </font>
+            </button>
+
+            <button (click)="add()" class="btn btn-success">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Sauvegarder</font>
+                </font>
+            </button>
+
+        </form>
+
+
+    </div>
+</div>

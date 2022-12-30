@@ -1,0 +1,362 @@
+<div class="card">
+    <div class="card-header">
+        <strong class="card-title">Paramètres</strong>
+    </div>
+    <div class="card-body">
+        <form method="post" accept-charset="utf-8">
+            <input type="hidden" name="csrf_stream_token" value="2f8edb916b1acaf6aa9af44ca4c08f57">
+
+            <table class="table table-striped">
+                <tfoot>
+                    <tr>
+                        <th width="40%">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <strong>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">ID du patient</font>
+                                        </font>
+                                    </strong>
+                                    <input type="text" required="" name="patient_id" id="patient_id"
+                                        class="invoice-input">
+                                    <p class="text-center text-danger  invlid_patient_id"></p>
+                                </li>
+                                <li><strong>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Nom complet</font>
+                                        </font>
+                                    </strong>
+                                    <input type="text" class="invoice-input" id="patient_name">
+                                </li>
+                                <li>
+                                    <strong>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Adresse&nbsp;&nbsp;&nbsp;&nbsp;
+                                            </font>
+                                        </font>
+                                    </strong>
+                                    <input type="text" class="invoice-input" id="patient_address">
+                                </li>
+                            </ul>
+                        </th>
+                        <th width="20%" class="text-center">
+                            <strong class="text-border">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Facture d'achat</font>
+                                </font>
+                            </strong>
+                        </th>
+                        <th width="40%">
+                            <h4>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Date :
+                                    </font>
+                                </font><input type="text" name="date" required="" value="18-12-2020"
+                                    class="datepicker invoice-input hasDatepicker" id="dp1608286487863"><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Demo Hospital Limited </font>
+                                </font><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                    </font>
+                                </font>
+                            </h4>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+
+            <table id="invoice" class="table table-striped">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Nom du compte</font>
+                            </font>
+                        </th>
+                        <th>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">La description</font>
+                            </font>
+                        </th>
+                        <th width="50">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Quantité</font>
+                            </font>
+                        </th>
+                        <th width="120">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Prix</font>
+                            </font>
+                        </th>
+                        <th width="120">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sous-total</font>
+                            </font>
+                        </th>
+                        <th width="160">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Ajouter enlever</font>
+                            </font>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="account_id[]" class="dont-select-me form-control" required="">
+                                <option value="" selected="selected">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Sélectionnez une option</font>
+                                    </font>
+                                </option>
+                                <option value="2">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">La finance </font>
+                                    </font>
+                                </option>
+                                <option value="5">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Gagner des patients</font>
+                                    </font>
+                                </option>
+                                <option value="8">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Teknisi</font>
+                                    </font>
+                                </option>
+                                <option value="9">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">asdawd</font>
+                                    </font>
+                                </option>
+                                <option value="10">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">abc</font>
+                                    </font>
+                                </option>
+                                <option value="11">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Atul Ranjan</font>
+                                    </font>
+                                </option>
+                                <option value="12">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Avik Gupta</font>
+                                    </font>
+                                </option>
+                                <option value="13">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Muhammad Umair</font>
+                                    </font>
+                                </option>
+                                <option value="14">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">BANQUE SALAAM</font>
+                                    </font>
+                                </option>
+                                <option value="15">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Jovan</font>
+                                    </font>
+                                </option>
+                                <option value="16">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">0697</font>
+                                    </font>
+                                </option>
+                                <option value="18">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">tester</font>
+                                    </font>
+                                </option>
+                                <option value="20">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">usman</font>
+                                    </font>
+                                </option>
+                                <option value="21">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">thé</font>
+                                    </font>
+                                </option>
+                                <option value="22">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">md shohidullah</font>
+                                    </font>
+                                </option>
+                                <option value="25">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Sourav Karmakar</font>
+                                    </font>
+                                </option>
+                                <option value="26">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Ramesh Lal</font>
+                                    </font>
+                                </option>
+                            </select>
+                        </td>
+                        <td><textarea name="description[]" class="form-control" placeholder="La description"></textarea>
+                        </td>
+
+                        <td><input type="number" name="quantity[]" required="" autocomplete="off"
+                                class="totalCal form-control" placeholder="Quantité"></td>
+                        <td><input type="number" name="price[]" required="" autocomplete="off"
+                                class="totalCal form-control" placeholder="Prix"></td>
+                        <td><input type="number" name="subtotal[]" required="" readonly="" autocomplete="off"
+                                class="subtotal form-control" placeholder="Sous-total" value="0.00"></td>
+
+                        <td>
+                            <div class="btn btn-group">
+                                <button type="button" class="btn btn-sm btn-primary addBtn">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Ajouter</font>
+                                    </font>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger removeBtn">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Retirer</font>
+                                    </font>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="bg-info">
+                        <td colspan="3"></td>
+                        <th class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Total</font>
+                            </font>
+                        </th>
+                        <th><input type="number" name="total" id="total" class="form-control" readonly="" required=""
+                                placeholder="Total" value="0.00"></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">T.V.A</font>
+                            </font>
+                        </th>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">%</font>
+                                    </font>
+                                </div>
+                                <input type="number" id="vatParcent" required="" autocomplete="off" class="form-control"
+                                    value="0">
+                            </div>
+                        </td>
+                        <td><input type="number" name="vat" id="vat" required="" autocomplete="off"
+                                class="vatDiscount paidDue form-control" placeholder="T.V.A" value="0.00"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Remise</font>
+                            </font>
+                        </th>
+                        <td>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">%</font>
+                                    </font>
+                                </div>
+                                <input type="number" id="discountParcent" required="" autocomplete="off"
+                                    class=" form-control" value="0">
+                            </div>
+                        </td>
+
+                        <td><input type="number" name="discount" required="" autocomplete="off" id="discount"
+                                class="vatDiscount paidDue form-control" placeholder="Remise" value="0.00"></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bg-success">
+                        <td colspan="3"></td>
+                        <th class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">somme finale</font>
+                            </font>
+                        </th>
+                        <th><input type="number" name="grand_total" readonly="" required="" autocomplete="off"
+                                id="grand_total" class="paidDue form-control" placeholder="somme finale" value="0.00">
+                        </th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <th class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Payé</font>
+                            </font>
+                        </th>
+                        <td><input type="number" name="paid" id="paid" autocomplete="off" class="paidDue form-control"
+                                required="" placeholder="Payé" value="0.00"></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bg-danger">
+                        <td colspan="3"></td>
+                        <th class="text-right">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Dû</font>
+                            </font>
+                        </th>
+                        <td><input type="number" name="due" id="due" autocomplete="off" class="paidDue form-control"
+                                required="" placeholder="Dû" value="0.00"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="form-group row">
+                                <label class="col-xs-3">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Statut</font>
+                                    </font>
+                                </label>
+                                <div class="col-xs-9">
+                                    <div class="form-check">
+                                        <label class="radio-inline"><input type="radio" name="status" value="1"
+                                                checked="">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">actif</font>
+                                            </font>
+                                        </label>
+                                        <label class="radio-inline"><input type="radio" name="status" value="0">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Inactif</font>
+                                            </font>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><button type="reset" class="btn btn-info btn-block">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Réinitialiser</font>
+                                </font>
+                            </button></td>
+                        <td><button class="btn btn-success btn-block">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Sauvegarder</font>
+                                </font>
+                            </button></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+
+
+    </div>
+</div>

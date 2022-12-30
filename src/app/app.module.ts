@@ -28,8 +28,6 @@ import { RecepionistComponent } from './modules/employee/recepionist/recepionist
 import { ConfigurationComponent } from './modules/general/configuration/configuration.component';
 import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
 import { LoginComponent } from './modules/general/login/login.component';
-import { AddInsuranceComponent } from './modules/insurance/add-insurance/add-insurance.component';
-import { InsuranceComponent } from './modules/insurance/insurance/insurance.component';
 import { IvestigationComponent } from './modules/investigation/ivestigation/ivestigation.component';
 import { AddInvoiceComponent } from './modules/invoice/add-invoice/add-invoice.component';
 import { InvoiceComponent } from './modules/invoice/invoice/invoice.component';
@@ -58,7 +56,6 @@ import { EditAccountComponent } from './modules/account/edit-account/edit-accoun
 import { EditCategoryComponent } from './modules/category/edit-category/edit-category.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
 import { EditMedicamentComponent } from './modules/medicament/edit-medicament/edit-medicament.component';
-import { EditInsuranceComponent } from './modules/insurance/edit-insurance/edit-insurance.component';
 import { EditInvoiceComponent } from './modules/invoice/edit-invoice/edit-invoice.component';
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
 import { EditPrescriptionComponent } from './modules/prescription/edit-prescription/edit-prescription.component';
@@ -67,8 +64,6 @@ import { HospitalConfigComponent } from './modules/general/hospital-config/hospi
 import { EmailConfigComponent } from './modules/general/email-config/email-config.component';
 import { SystemConfigComponent } from './modules/general/system-config/system-config.component';
 import { ShortcutMenuComponent } from './template/shortcut-menu/shortcut-menu.component';
-
-
 const routes: Routes = [
   { path: 'invoice', component: InvoiceComponent },
   { path: 'addinvoice', component: AddInvoiceComponent },
@@ -84,10 +79,7 @@ const routes: Routes = [
   { path: 'adddepartement', component: AddDepartementComponent },
   { path: 'document', component: DocumentComponent },
   { path: 'adddocument', component: AddDocumentComponent },
-  { path: 'insurance', component: InsuranceComponent },
-  { path: 'laboratory', component: LaboratoryComponent },
-  { path: 'insurance', component: InsuranceComponent },
-  { path: 'addinsurance', component: AddInsuranceComponent },
+   { path: 'laboratory', component: LaboratoryComponent },
   { path: 'adddoctor', component: AddDoctorComponent },
   { path: 'doctor', component: MedecinComponent },
   { path: 'medicament', component: MedicamentComponent },
@@ -131,7 +123,6 @@ const routes: Routes = [
     PrescriptionComponent,
     AccountComponent,
     PaymentComponent,
-    InsuranceComponent,
     AccountantComponent,
     LaboratoryComponent,
     NurseComponent,
@@ -154,7 +145,6 @@ const routes: Routes = [
     AddAccountComponent,
     AddInvoiceComponent,
     AddPaymentComponent,
-    AddInsuranceComponent,
     AddServiceComponent,
     AddEmployeeComponent,
     AddAccountComponent,
@@ -164,7 +154,6 @@ const routes: Routes = [
     AddPatientComponent,
     AddDocumentComponent,
     AddInvoiceComponent,
-    AddInsuranceComponent,
     ViewDoctorComponent,
     ViewPatientComponent,
     ViewPrescriptionComponent,
@@ -175,7 +164,6 @@ const routes: Routes = [
     EditCategoryComponent,
     EditDocumentComponent,
     EditMedicamentComponent,
-    EditInsuranceComponent,
     EditInvoiceComponent,
     EditPatientComponent,
     EditRendezvousComponent,

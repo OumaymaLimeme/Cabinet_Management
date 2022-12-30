@@ -7,18 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   title = 'my-app-angular';
 
   public router: string;
 
   constructor(private _router: Router){
 
-         
-        
+
+
     }
   ngOnInit() {
-   
+
   }
 
   hasRoute(route: string) {

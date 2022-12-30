@@ -60,9 +60,6 @@ import { EditInvoiceComponent } from './modules/invoice/edit-invoice/edit-invoic
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
 import { EditPrescriptionComponent } from './modules/prescription/edit-prescription/edit-prescription.component';
 import { EditRendezvousComponent } from './modules/schedule/edit-rendezvous/edit-rendezvous.component';
-import { HospitalConfigComponent } from './modules/general/hospital-config/hospital-config.component';
-import { EmailConfigComponent } from './modules/general/email-config/email-config.component';
-import { SystemConfigComponent } from './modules/general/system-config/system-config.component';
 import { ShortcutMenuComponent } from './template/shortcut-menu/shortcut-menu.component';
 const routes: Routes = [
   { path: 'invoice', component: InvoiceComponent },
@@ -98,9 +95,6 @@ const routes: Routes = [
   { path: 'addemployee', component: AddEmployeeComponent },
   { path: 'addrendezvous', component: AddAppointmentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'system-config', component: SystemConfigComponent },
-  { path: 'email-config', component: EmailConfigComponent },
-  { path: 'hospital-config', component: HospitalConfigComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: '**', redirectTo: 'login', pathMatch: 'full' }]
 
@@ -167,9 +161,6 @@ const routes: Routes = [
     EditInvoiceComponent,
     EditPatientComponent,
     EditRendezvousComponent,
-    HospitalConfigComponent,
-    EmailConfigComponent,
-    SystemConfigComponent,
     ShortcutMenuComponent
   ],
   imports: [

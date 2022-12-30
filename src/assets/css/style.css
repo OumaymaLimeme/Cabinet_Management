@@ -1,16 +1,4 @@
-/* This css file is to over write bootstrap css
---------------------------------------------------------- /
-* Theme Name: Sufee-Admin Admin Template
-* Theme URI: http://demos.jeweltheme.com/Sufee-Admin/
-* Author: jewel_theme
-* Author URI: http://themeforest.net/user/jewel_theme/portfolio
-* Description:
-* Version: 1.0.0
-* License: GNU General Public License v2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-* Tags: html, themplate, Sufee-Admin
---------------------------------------------------------- */
-/* Bootstrap */
+
 @charset "UTF-8";
 
 /*!
@@ -1569,12 +1557,6 @@ header .form-inline {
     width: 50px;
     padding:12px 0;
     padding: 0.75rem 0;
-    margin: 0 !important !important;
-    color: #fff;
-    outline: 0;
-    text-align: center;
-    background: transparent;
-    border: 0;
     border-left: 1px solid rgba(120, 130, 140, 0.4); }
   .card .card-footer {
     padding:10.4px 20px;

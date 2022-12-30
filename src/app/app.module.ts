@@ -18,14 +18,6 @@ import { AddDoctorComponent } from './modules/doctor/add-doctor/add-doctor.compo
 import { MedecinComponent } from './modules/doctor/medecin/medecin.component';
 import { AddDocumentComponent } from './modules/document/add-document/add-document.component';
 import { DocumentComponent } from './modules/document/document/document.component';
-import { AccountantComponent } from './modules/employee/accountant/accountant.component';
-import { AddEmployeeComponent } from './modules/employee/add-employee/add-employee.component';
-import { LaboratoryComponent } from './modules/employee/laboratory/laboratory.component';
-import { NurseComponent } from './modules/employee/nurse/nurse.component';
-import { OperatorComponent } from './modules/employee/operator/operator.component';
-import { PharmasistComponent } from './modules/employee/pharmasist/pharmasist.component';
-import { RecepionistComponent } from './modules/employee/recepionist/recepionist.component';
-import { ConfigurationComponent } from './modules/general/configuration/configuration.component';
 import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
 import { LoginComponent } from './modules/general/login/login.component';
 import { IvestigationComponent } from './modules/investigation/ivestigation/ivestigation.component';
@@ -39,7 +31,6 @@ import { PaymentComponent } from './modules/payment/payment/payment.component';
 import { AddPrescriptionComponent } from './modules/prescription/add-prescription/add-prescription.component';
 import { PrescriptionComponent } from './modules/prescription/prescription/prescription.component';
 import { AddScheduleComponent } from './modules/schedule/add-schedule/add-schedule.component';
-import { ProgramComponent } from './modules/schedule/program/program.component';
 import { AddServiceComponent } from './modules/service/add-service/add-service.component';
 import { ServiceComponent } from './modules/service/service/service.component';
 import { HeaderComponent } from './template/header/header.component';
@@ -51,7 +42,6 @@ import { ViewPrescriptionComponent } from './view-prescription/view-prescription
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditDepartementComponent } from './modules/departement/edit-departement/edit-departement.component';
 import { EditMedecinComponent } from './modules/doctor/edit-medecin/edit-medecin.component';
-import { EditEmployeeComponent } from './modules/employee/edit-employee/edit-employee.component';
 import { EditAccountComponent } from './modules/account/edit-account/edit-account.component';
 import { EditCategoryComponent } from './modules/category/edit-category/edit-category.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
@@ -67,7 +57,6 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'addservice', component: AddServiceComponent },
-  { path: 'accountant', component: AccountantComponent },
   { path: 'birth', component: BirthdayComponent },
   { path: 'category', component: CategorieComponent },
   { path: 'dead', component: DeadComponent },
@@ -76,23 +65,16 @@ const routes: Routes = [
   { path: 'adddepartement', component: AddDepartementComponent },
   { path: 'document', component: DocumentComponent },
   { path: 'adddocument', component: AddDocumentComponent },
-   { path: 'laboratory', component: LaboratoryComponent },
   { path: 'adddoctor', component: AddDoctorComponent },
   { path: 'doctor', component: MedecinComponent },
   { path: 'medicament', component: MedicamentComponent },
   { path: 'addmedicament', component: MedecinComponent },
-  { path: 'nurse', component: NurseComponent },
-  { path: 'operator', component: OperatorComponent },
   { path: 'patient', component: PatientComponent },
   { path: 'addpatient', component: AddPatientComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'pharmacist', component: PharmasistComponent },
-  { path: 'prescription', component: PrescriptionComponent },
+   { path: 'prescription', component: PrescriptionComponent },
   { path: 'addprescription', component: AddPrescriptionComponent },
-  { path: 'program', component: ProgramComponent },
-  { path: 'receptionist', component: RecepionistComponent },
   { path: 'rendezvous', component: RendezVousComponent },
-  { path: 'addemployee', component: AddEmployeeComponent },
   { path: 'addrendezvous', component: AddAppointmentComponent },
   { path: 'login', component: LoginComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -112,23 +94,15 @@ const routes: Routes = [
     MedecinComponent,
     PatientComponent,
     DocumentComponent,
-    ProgramComponent,
     RendezVousComponent,
     PrescriptionComponent,
     AccountComponent,
     PaymentComponent,
-    AccountantComponent,
-    LaboratoryComponent,
-    NurseComponent,
-    PharmasistComponent,
-    RecepionistComponent,
     BirthdayComponent,
     DeadComponent,
     CategorieComponent,
     IvestigationComponent,
-    OperatorComponent,
     LoginComponent,
-    ConfigurationComponent,
     AddDepartementComponent,
     AddDoctorComponent,
     AddPatientComponent,
@@ -140,7 +114,6 @@ const routes: Routes = [
     AddInvoiceComponent,
     AddPaymentComponent,
     AddServiceComponent,
-    AddEmployeeComponent,
     AddAccountComponent,
     AddServiceComponent,
     AddScheduleComponent,
@@ -153,7 +126,6 @@ const routes: Routes = [
     ViewPrescriptionComponent,
     EditDepartementComponent,
     EditMedecinComponent,
-    EditEmployeeComponent,
     EditAccountComponent,
     EditCategoryComponent,
     EditDocumentComponent,

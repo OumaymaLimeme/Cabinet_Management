@@ -21,6 +21,7 @@
     "@angular/router": "~11.0.1",
     "chart.js": "^2.9.4",
     "express": "^4.17.1",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",

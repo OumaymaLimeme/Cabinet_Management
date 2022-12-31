@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <strong class="card-title">Nouveau</strong>
+        <strong class="card-title">Nouveau Prescription</strong>
     </div>
     <div class="card-body">
         <form class="form-inner" [formGroup]="prescriptionForm" method="post" accept-charset="utf-8">
@@ -192,66 +192,16 @@
                         placeholder="Assurance santé" value="">
                 </div>
             </div>
-
-            <div class="form-group row">
-                <label for="low_income" class="col-xs-3 col-form-label">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Faible revenu</font>
-                    </font>
-                </label>
-                <div class="col-xs-9">
-                    <input name="low_income" type="text" class="form-control" id="low_income"
-                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
-                        placeholder="Faible revenu" value="">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="reference" class="col-xs-3 col-form-label">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Référence</font>
-                    </font>
-                </label>
-                <div class="col-xs-9">
-                    <input name="reference" type="text" class="form-control" id="reference"
-                        [ngClass]="{ 'is-invalid': submitted && f.supplier.errors }" formControlName="supplier"
-                        placeholder="Référence" value="">
-                </div>
-            </div>
-
-            <!--Radio-->
-            <div class="form-group row">
-                <label class="col-sm-3">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Statut</font>
-                    </font>
-                </label>
-                <div class="col-xs-9">
-                    <div class="form-check">
-                        <label class="radio-inline"><input type="radio" name="status" value="1" checked="">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">actif</font>
-                            </font>
-                        </label>
-                        <label class="radio-inline"><input type="radio" name="status" value="0">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Inactif</font>
-                            </font>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
             <div class="form-group row">
                 <div class="  ">
                     <div class="btn btn-primarys">
-                        <button type="reset" class="btn btn-primary">
+                        <button type="reset" class="button-43">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Réinitialiser</font>
                             </font>
                         </button>
                         <div class="or"></div>
-                        <button (click)="add()" class="btn btn-success">
+                        <button (click)="add()" class="button-40">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Sauvegarder</font>
                             </font>

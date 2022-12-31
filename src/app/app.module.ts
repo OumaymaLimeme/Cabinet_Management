@@ -10,7 +10,6 @@ import { AddAccountComponent } from './modules/account/add-account/add-account.c
 import { AddAppointmentComponent } from './modules/appointment/add-appointment/add-appointment.component';
 import { RendezVousComponent } from './modules/appointment/rendez-vous/rendez-vous.component';
 import { BirthdayComponent } from './modules/birth/birthday/birthday.component';
-import { CategorieComponent } from './modules/category/categorie/categorie.component';
 import { DeadComponent } from './modules/dead/dead/dead.component';
 import { AddDepartementComponent } from './modules/departement/add-departement/add-departement.component';
 import { DepartementComponent } from './modules/departement/departement/departement.component';
@@ -20,7 +19,6 @@ import { AddDocumentComponent } from './modules/document/add-document/add-docume
 import { DocumentComponent } from './modules/document/document/document.component';
 import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
 import { LoginComponent } from './modules/general/login/login.component';
-import { IvestigationComponent } from './modules/investigation/ivestigation/ivestigation.component';
 import { AddInvoiceComponent } from './modules/invoice/add-invoice/add-invoice.component';
 import { InvoiceComponent } from './modules/invoice/invoice/invoice.component';
 import { AddPatientComponent } from './modules/patient/add-patient/add-patient.component';
@@ -42,7 +40,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditDepartementComponent } from './modules/departement/edit-departement/edit-departement.component';
 import { EditMedecinComponent } from './modules/doctor/edit-medecin/edit-medecin.component';
 import { EditAccountComponent } from './modules/account/edit-account/edit-account.component';
-import { EditCategoryComponent } from './modules/category/edit-category/edit-category.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
 import { EditInvoiceComponent } from './modules/invoice/edit-invoice/edit-invoice.component';
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
@@ -56,7 +53,6 @@ const routes: Routes = [
   { path: 'service', component: ServiceComponent },
   { path: 'addservice', component: AddServiceComponent },
   { path: 'birth', component: BirthdayComponent },
-  { path: 'category', component: CategorieComponent },
   { path: 'dead', component: DeadComponent },
   { path: 'departement', component: DepartementComponent },
   { path: 'adddepartement', component: AddDepartementComponent },
@@ -95,8 +91,6 @@ const routes: Routes = [
     PaymentComponent,
     BirthdayComponent,
     DeadComponent,
-    CategorieComponent,
-    IvestigationComponent,
     LoginComponent,
     AddDepartementComponent,
     AddDoctorComponent,
@@ -122,7 +116,6 @@ const routes: Routes = [
     EditDepartementComponent,
     EditMedecinComponent,
     EditAccountComponent,
-    EditCategoryComponent,
     EditDocumentComponent,
     EditInvoiceComponent,
     EditPatientComponent,

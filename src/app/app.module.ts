@@ -23,7 +23,6 @@ import { LoginComponent } from './modules/general/login/login.component';
 import { IvestigationComponent } from './modules/investigation/ivestigation/ivestigation.component';
 import { AddInvoiceComponent } from './modules/invoice/add-invoice/add-invoice.component';
 import { InvoiceComponent } from './modules/invoice/invoice/invoice.component';
-import { MedicamentComponent } from './modules/medicament/medicament/medicament.component';
 import { AddPatientComponent } from './modules/patient/add-patient/add-patient.component';
 import { PatientComponent } from './modules/patient/patient/patient.component';
 import { AddPaymentComponent } from './modules/payment/add-payment/add-payment.component';
@@ -45,7 +44,6 @@ import { EditMedecinComponent } from './modules/doctor/edit-medecin/edit-medecin
 import { EditAccountComponent } from './modules/account/edit-account/edit-account.component';
 import { EditCategoryComponent } from './modules/category/edit-category/edit-category.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
-import { EditMedicamentComponent } from './modules/medicament/edit-medicament/edit-medicament.component';
 import { EditInvoiceComponent } from './modules/invoice/edit-invoice/edit-invoice.component';
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
 import { EditPrescriptionComponent } from './modules/prescription/edit-prescription/edit-prescription.component';
@@ -60,14 +58,12 @@ const routes: Routes = [
   { path: 'birth', component: BirthdayComponent },
   { path: 'category', component: CategorieComponent },
   { path: 'dead', component: DeadComponent },
-  { path: 'medicament', component: MedicamentComponent },
   { path: 'departement', component: DepartementComponent },
   { path: 'adddepartement', component: AddDepartementComponent },
   { path: 'document', component: DocumentComponent },
   { path: 'adddocument', component: AddDocumentComponent },
   { path: 'adddoctor', component: AddDoctorComponent },
   { path: 'doctor', component: MedecinComponent },
-  { path: 'medicament', component: MedicamentComponent },
   { path: 'addmedicament', component: MedecinComponent },
   { path: 'patient', component: PatientComponent },
   { path: 'addpatient', component: AddPatientComponent },
@@ -86,7 +82,6 @@ const routes: Routes = [
     AppComponent,
     NavigationComponent,
     InvoiceComponent,
-    MedicamentComponent,
     ServiceComponent,
     DashboardComponent,
     HeaderComponent,
@@ -129,7 +124,6 @@ const routes: Routes = [
     EditAccountComponent,
     EditCategoryComponent,
     EditDocumentComponent,
-    EditMedicamentComponent,
     EditInvoiceComponent,
     EditPatientComponent,
     EditRendezvousComponent,

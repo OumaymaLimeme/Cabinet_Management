@@ -41,53 +41,53 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-                <router-outlet></router-outlet>
+              <router-outlet></router-outlet>
 
-            </div>
-            <!-- /.container-fluid -->
+          </div>
+          <!-- /.container-fluid -->
 
-        </div>
-        <!-- End of Main Content -->
+      </div>
+      <!-- End of Main Content -->
 
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+              <div class="copyright text-center my-auto">
 
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
+              </div>
+          </div>
+      </footer>
+      <!-- End of Footer -->
 
-    </div>
-    <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Content Wrapper -->
 
 </div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+  <i class="fas fa-angle-up"></i>
 </a>
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a routerLink="/" class="btn btn-primary">Logout</a>
-            </div>
-        </div>
-    </div>
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a routerLink="/" class="btn btn-primary">Logout</a>
+          </div>
+      </div>
+  </div>
 </div>
 
 
@@ -95,48 +95,48 @@
 <br><br>
 
 <div *ngIf="hasRoute('login')">
-  <div class="container mt--8 pb-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-7">
-            <div class="card border-2 mb-1">
-                <div class="card-header bg-transparent pb-5">
-                    <div class="text-muted text-center mt-2 mb-3"></div>
-                    <br><br>
-                    <div class="btn-wrapper text-center">
-                        <img src="assets/img/logo.png" style="max-height: 80px;" class="navbar-brand-img" alt="...">
-                    </div>
-                </div>
-                <div class="card-body px-lg-5 py-lg-5">
-                    <div class="text-center text-muted mb-4">
+<div class="container mt--8 pb-5" >
+  <div class="row justify-content-center" >
+      <div class="col-lg-4 col-md-7">
+          <div class="card border-2 mb-1">
+              <div class="card-header bg-transparent pb-5">
+                  <div class="text-muted text-center mt-2 mb-3"></div>
+                  <br><br>
+                  <div class="btn-wrapper text-center">
+                      <img src="assets/img/logo.png"  width="300" height="200" style="max-height: 200px;" class="navbar-brand-img" alt="...">
+                  </div>
+              </div>
+              <div class="card-body px-lg-5 py-lg-5">
+                  <div class="text-center text-muted mb-4">
 
-                    </div>
+                  </div>
 
-                    <div class="form-group mb-3">
-                        <div class="input-group input-group-merge input-group-alternative">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input class="form-control" placeholder="Email" type="text" value="admin@admin.com">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group input-group-merge input-group-alternative">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                            </div>
-                            <input class="form-control" placeholder="Password" type="password" value="adùin">
-                        </div>
-                    </div>
+                  <div class="form-group mb-3">
+                      <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input class="form-control" placeholder="Email" type="text" value="admin@admin.com">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="input-group input-group-merge input-group-alternative">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                          </div>
+                          <input class="form-control" placeholder="Password" type="password" value="admin">
+                      </div>
+                  </div>
 
-                    <div class="text-center">
-                        <button routerLink="/dashboard" type="submit"
-                            class="btn btn-primary my-4">Connexion</button>
-                    </div>
+                  <div class="text-center">
+                      <button routerLink="/dashboard" type="submit"
+                          class="btn btn-primary my-4">Connexion</button>
+                  </div>
 
-                </div>
-            </div>
+              </div>
+          </div>
 
-        </div>
-    </div>
+      </div>
+  </div>
 </div>
 </div>

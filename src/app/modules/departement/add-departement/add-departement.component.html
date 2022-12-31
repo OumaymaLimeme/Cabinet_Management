@@ -37,24 +37,9 @@
             </div>
          </div>
 
-         <!--Radio-->
-         <div class="form-group">
-            <label class="col-md-3 col-form-label">Statut</label>
-            <div class="col-md-9">
-               <div class="form-check">
-                  <label class="radio-inline">
-                     <input formControlName="status" type="radio" name="status" value="Active" checked="">Active</label>
-                  <label class="radio-inline">
-                     <input formControlName="status" type="radio" name="status" value="Inactive">Inactive</label>
-               </div>
-            </div>
-         </div>
+         <button type="reset" (click)="reset()" class="button-40">Reset </button>
 
-
-
-         <button type="reset" (click)="reset()" class="btn btn-secondary">Reset </button>
-
-         <button type="button" (click)="add()" class="btn btn-success">Sauvegarder</button>
+         <button type="button" (click)="add()" class="button-43">Sauvegarder</button>
 
 
 

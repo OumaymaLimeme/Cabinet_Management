@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <strong class="card-title">Nouveau</strong>
+        <strong class="card-title">Nouveau Médecin</strong>
     </div>
     <div class="card-body">
         <form class="form-inner" enctype="multipart/form-data" [formGroup]="doctorForm" accept-charset="utf-8">
@@ -192,7 +192,7 @@
             <div class="form-group row">
                 <label for="phone" class="col-md-3 col-form-label">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Pas de téléphone</font>
+                        <font style="vertical-align: inherit;">Téléphone</font>
                     </font>
                 </label>
                 <div class="col-md-6">
@@ -206,31 +206,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="form-group row">
-                <label for="mobile" class="col-md-3 col-form-label">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Mobile Non </font>
-                    </font><i class="text-danger">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">*</font>
-                        </font>
-                    </i>
-                </label>
-                <div class="col-md-6">
-                    <input name="mobile" class="form-control" type="number" placeholder="Mobile Non"
-                        [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" formControlName="mobile" id="mobile"
-                        value="">
-
-                    <div *ngIf="submitted && f.mobile.errors" class="alert alert-danger">
-                        <div *ngIf="submitted && f.mobile.errors.required">
-                            {{msg.validationMessage.mobile}}</div>
-                    </div>
-                </div>
-            </div>
-
-
-
 
             <!-- if representative picture is already uploaded -->
 
@@ -352,42 +327,13 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-            <div class="form-group row">
-                <label class="col-md-3">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Statut</font>
-                    </font>
-                </label>
-                <div class="col-md-6">
-                    <div class="form-check">
-                        <label class="radio-inline">
-                            <input formControlName="status" type="radio" name="status" value="1"
-                                checked="&quot;checked&quot;">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">actif </font>
-                            </font>
-                        </label>
-                        <label class="radio-inline">
-                            <input formControlName="status" type="radio" name="status" value="0">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">Inactif </font>
-                            </font>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <button type="reset" class="btn btn-secondary">
+            <button type="reset" class="button-43">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Réinitialiser</font>
                 </font>
             </button>
 
-            <button (click)="add()" class="btn btn-success">
+            <button (click)="add()" class="button-40">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Sauvegarder</font>
                 </font>

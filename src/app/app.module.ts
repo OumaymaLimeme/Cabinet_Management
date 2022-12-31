@@ -20,11 +20,8 @@ import { DocumentComponent } from './modules/document/document/document.componen
 import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
 import { LoginComponent } from './modules/general/login/login.component';
 import { AddInvoiceComponent } from './modules/invoice/add-invoice/add-invoice.component';
-import { InvoiceComponent } from './modules/invoice/invoice/invoice.component';
 import { AddPatientComponent } from './modules/patient/add-patient/add-patient.component';
 import { PatientComponent } from './modules/patient/patient/patient.component';
-import { AddPaymentComponent } from './modules/payment/add-payment/add-payment.component';
-import { PaymentComponent } from './modules/payment/payment/payment.component';
 import { AddPrescriptionComponent } from './modules/prescription/add-prescription/add-prescription.component';
 import { PrescriptionComponent } from './modules/prescription/prescription/prescription.component';
 import { AddScheduleComponent } from './modules/schedule/add-schedule/add-schedule.component';
@@ -47,8 +44,6 @@ import { EditPrescriptionComponent } from './modules/prescription/edit-prescript
 import { EditRendezvousComponent } from './modules/schedule/edit-rendezvous/edit-rendezvous.component';
 import { ShortcutMenuComponent } from './template/shortcut-menu/shortcut-menu.component';
 const routes: Routes = [
-  { path: 'invoice', component: InvoiceComponent },
-  { path: 'addinvoice', component: AddInvoiceComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'addservice', component: AddServiceComponent },
@@ -63,7 +58,6 @@ const routes: Routes = [
   { path: 'addmedicament', component: MedecinComponent },
   { path: 'patient', component: PatientComponent },
   { path: 'addpatient', component: AddPatientComponent },
-  { path: 'payment', component: PaymentComponent },
    { path: 'prescription', component: PrescriptionComponent },
   { path: 'addprescription', component: AddPrescriptionComponent },
   { path: 'rendezvous', component: RendezVousComponent },
@@ -77,7 +71,6 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NavigationComponent,
-    InvoiceComponent,
     ServiceComponent,
     DashboardComponent,
     HeaderComponent,
@@ -88,7 +81,6 @@ const routes: Routes = [
     RendezVousComponent,
     PrescriptionComponent,
     AccountComponent,
-    PaymentComponent,
     BirthdayComponent,
     DeadComponent,
     LoginComponent,
@@ -101,7 +93,6 @@ const routes: Routes = [
     AddPrescriptionComponent,
     AddAccountComponent,
     AddInvoiceComponent,
-    AddPaymentComponent,
     AddServiceComponent,
     AddAccountComponent,
     AddServiceComponent,

@@ -19,7 +19,6 @@ import { AddDocumentComponent } from './modules/document/add-document/add-docume
 import { DocumentComponent } from './modules/document/document/document.component';
 import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
 import { LoginComponent } from './modules/general/login/login.component';
-import { AddInvoiceComponent } from './modules/invoice/add-invoice/add-invoice.component';
 import { AddPatientComponent } from './modules/patient/add-patient/add-patient.component';
 import { PatientComponent } from './modules/patient/patient/patient.component';
 import { AddPrescriptionComponent } from './modules/prescription/add-prescription/add-prescription.component';
@@ -29,7 +28,6 @@ import { AddServiceComponent } from './modules/service/add-service/add-service.c
 import { ServiceComponent } from './modules/service/service/service.component';
 import { HeaderComponent } from './template/header/header.component';
 import { NavigationComponent } from './template/navigation/navigation.component';
-
 import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
 import { ViewPatientComponent } from './view-patient/view-patient.component';
 import { ViewPrescriptionComponent } from './view-prescription/view-prescription.component';
@@ -38,7 +36,6 @@ import { EditDepartementComponent } from './modules/departement/edit-departement
 import { EditMedecinComponent } from './modules/doctor/edit-medecin/edit-medecin.component';
 import { EditAccountComponent } from './modules/account/edit-account/edit-account.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
-import { EditInvoiceComponent } from './modules/invoice/edit-invoice/edit-invoice.component';
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
 import { EditPrescriptionComponent } from './modules/prescription/edit-prescription/edit-prescription.component';
 import { EditRendezvousComponent } from './modules/schedule/edit-rendezvous/edit-rendezvous.component';
@@ -92,7 +89,6 @@ const routes: Routes = [
     AddAppointmentComponent,
     AddPrescriptionComponent,
     AddAccountComponent,
-    AddInvoiceComponent,
     AddServiceComponent,
     AddAccountComponent,
     AddServiceComponent,
@@ -100,7 +96,6 @@ const routes: Routes = [
     AddPrescriptionComponent,
     AddPatientComponent,
     AddDocumentComponent,
-    AddInvoiceComponent,
     ViewDoctorComponent,
     ViewPatientComponent,
     ViewPrescriptionComponent,
@@ -108,7 +103,6 @@ const routes: Routes = [
     EditMedecinComponent,
     EditAccountComponent,
     EditDocumentComponent,
-    EditInvoiceComponent,
     EditPatientComponent,
     EditRendezvousComponent,
     ShortcutMenuComponent

@@ -1,7 +1,7 @@
 Application de gestion de cabinet médical
 Contributeurs :
 Ce projet a été réalisé sous la collaboration de :
-Manar Freh 
+Manar Fareh 
 Oumayma limeme
 
 

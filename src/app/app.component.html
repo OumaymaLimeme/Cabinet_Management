@@ -1,99 +1,63 @@
 <!-- Page Wrapper -->
 <div id="wrapper" *ngIf="!hasRoute('login')">
 
-    <app-navigation></app-navigation>
-    <!-- End of Sidebar -->
+  <app-navigation></app-navigation>
+  <!-- End of Sidebar -->
 
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
 
-        <!-- Main Content -->
-        <div id="content">
+      <!-- Main Content -->
+      <div id="content">
 
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                <!-- Sidebar Toggle (Topbar) -->
-                <form class="form-inline">
-                    <button id="sidebarToggleTop" class="button-62">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </form>
+              <!-- Sidebar Toggle (Topbar) -->
+              <form class="form-inline">
+                  <button id="sidebarToggleTop" class="button-62">
+                      <i class="fa fa-bars"></i>
+                  </button>
+              </form>
 
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Rechercher ..."
-                            aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="button-62" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+              <!-- Topbar Search -->
+              <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                  <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Rechercher ..."
+                          aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                          <button class="button-62" type="button">
+                              <i class="fas fa-search fa-sm"></i>
+                          </button>
+                      </div>
+                  </div>
+              </form>
 
-                <app-header></app-header>
+              <app-header></app-header>
 
-            </nav>
-            <!-- End of Topbar -->
+          </nav>
+          <!-- End of Topbar -->
 
-            <!-- Begin Page Content -->
-            <div class="container-fluid">
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
 
-              <router-outlet></router-outlet>
+            <router-outlet></router-outlet>
 
-          </div>
-          <!-- /.container-fluid -->
+        </div>
+        <!-- /.container-fluid -->
 
-      </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-
-              </div>
-          </div>
-      </footer>
-      <!-- End of Footer -->
+    </div>
+    <!-- End of Main Content -->
 
   </div>
-  <!-- End of Content Wrapper -->
+<!-- End of Content Wrapper -->
 
 </div>
 <!-- End of Page Wrapper -->
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-  <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-              </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-              <a routerLink="/" class="btn btn-primary">Logout</a>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-
-<br><br>
-
+<a class="scroll-to-top rounded" href="#page-top"></a>
+<i class="fas fa-angle-up"></i>
 <div *ngIf="hasRoute('login')">
 <div class="container mt--8 pb-5" >
   <div class="row justify-content-center" >
@@ -110,13 +74,13 @@
                   <div class="text-center text-muted mb-4">
 
                   </div>
-
+                  <form>
                   <div class="form-group mb-3">
                       <div class="input-group input-group-merge input-group-alternative">
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-user"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Email" type="text" value="admin@admin.com">
+                          <input class="form-control" placeholder="Email" type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" value="admin@admin.com">
                       </div>
                   </div>
                   <div class="form-group">
@@ -124,7 +88,7 @@
                           <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-lock"></i></span>
                           </div>
-                          <input class="form-control" placeholder="Password" type="password" value="admin">
+                          <input class="form-control" placeholder="Password" type="password"  [(ngModel)]="password" [ngModelOptions]="{standalone: true}"  >
                       </div>
                   </div>
 
@@ -132,11 +96,14 @@
                       <button routerLink="/dashboard" type="submit"
                           class="button-62">Connexion</button>
                   </div>
-
+                </form>
               </div>
+
           </div>
 
       </div>
+
   </div>
 </div>
 </div>
+

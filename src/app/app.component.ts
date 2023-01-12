@@ -8,7 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  title = 'my-app-angular';
+  title = 'CabinetMedical';
+  email:string="";
+  password:string="";
 
   public router: string;
 

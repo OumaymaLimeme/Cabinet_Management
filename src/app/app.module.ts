@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-
 import { RouterModule, Routes } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { AccountComponent } from './modules/account/account/account.component';
@@ -37,7 +35,7 @@ import { EditMedecinComponent } from './modules/doctor/edit-medecin/edit-medecin
 import { EditAccountComponent } from './modules/account/edit-account/edit-account.component';
 import { EditDocumentComponent } from './modules/document/edit-document/edit-document.component';
 import { EditPatientComponent } from './modules/patient/edit-patient/edit-patient.component';
-import { EditPrescriptionComponent } from './modules/prescription/edit-prescription/edit-prescription.component';
+import { HttpClientModule } from '@angular/common/http';
 import { EditRendezvousComponent } from './modules/schedule/edit-rendezvous/edit-rendezvous.component';
 import { ShortcutMenuComponent } from './template/shortcut-menu/shortcut-menu.component';
 const routes: Routes = [
@@ -111,6 +109,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '' }],

@@ -1,7 +1,5 @@
 ( function ( $ ) {
     "use strict";
-
-
 // const brandPrimary = '#20a8d8'
 const brandSuccess = '#4dbd74'
 const brandInfo = '#63c2de'
@@ -69,20 +67,7 @@ function random (min, max) {
           ]
         },
         options: {
-            //   maintainAspectRatio: true,
-            //   legend: {
-            //     display: false
-            // },
-            // scales: {
-            //     xAxes: [{
-            //       display: false,
-            //       categoryPercentage: 1,
-            //       barPercentage: 0.5
-            //     }],
-            //     yAxes: [ {
-            //         display: false
-            //     } ]
-            // }
+        
 
 
             maintainAspectRatio: true,

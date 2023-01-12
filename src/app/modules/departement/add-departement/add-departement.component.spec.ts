@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AddDepartementComponent } from './add-departement.component';
 
 describe('AddDepartementComponent', () => {

@@ -1,3 +1,4 @@
+
 Medical office management application
 Contributors:
 This project was carried out in collaboration with:
@@ -19,6 +20,8 @@ here are some inetrafes of my application
 
 
 ![aa](https://user-images.githubusercontent.com/92635384/212547565-36e614c0-629b-43ad-9bb4-672f1a57adcb.png)
+![321653272_551211103554397_8007436130341453916_n](https://user-images.githubusercontent.com/92635384/212548094-b97da38c-28ea-4fe0-abc4-4b81f533cbd7.png)
+![321541641_859193002017227_6918596418757996067_n](https://user-images.githubusercontent.com/92635384/212548106-70cda5db-e2d5-4526-995f-5d78561dc6da.png)
 ![321677159_677785363830512_5899132271366554331_n](https://user-images.githubusercontent.com/92635384/212547568-34d8141c-f6a1-415b-ab92-fee47abd5d8d.png)
 ![322743110_3429053060717615_5525325443559924252_n](https://user-images.githubusercontent.com/92635384/212547572-ce8fa415-f4a2-45b6-a5da-89fa70e2c8f0.png)
 ![321306957_871872897181895_2408064570927788688_n](https://user-images.githubusercontent.com/92635384/212547578-51bdd7a0-1e56-496a-8f7d-daa0933d09c3.png)
